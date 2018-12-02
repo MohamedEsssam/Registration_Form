@@ -37,8 +37,6 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])){
     $sql = "INSERT INTO registration (uname,fname,lname,email,password,reg_d) VALUES ('$uname','$fname','$lname','$email','$pass',now()) ";
 if(mysqli_query($conn,$sql)){
     echo "<br>"."inserted";
-    $_SESSION['uname'] = $uname;
-    $_SESSION['success'] = "You are now logged in";
     header('location: login.php');
 }
 else {
