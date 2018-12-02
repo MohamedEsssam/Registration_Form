@@ -1,3 +1,6 @@
+/*
+   Created by Mohamed Essam 11/27/18
+*/
 document.getElementById("submit").addEventListener("click",validation);
 document.getElementById("error").style.display="none";
   function validation(){
